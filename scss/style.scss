@@ -1,0 +1,279 @@
+//colors
+$myRojo: #d63031;
+$RojoStrong: #F20505;
+$strongBrown: #734327;
+$grey: #1e272e;
+//fonts
+$pacifico:'Pacifico', cursive;;
+$roboto:'Roboto', sans-serif;
+$mali: 'Mali', cursive;
+
+@media only screen and (max-width: 600px) {
+  .ContIndex{
+  .ContIndex-Text{
+    font-size: 100%;
+    }
+  .pContIndex-Text {
+    font-size: 90%;
+  }}
+  #SMCont1 img {
+    width: 85%;
+  }
+  footer {
+    visibility: hidden;
+  }
+  #Contacto .Texto2 {
+    font-size: 90%;
+  }}
+
+//NavBar
+.navbar {
+  background-image: url(../media/fondo.jpg);
+  height: 60%;
+  margin: 0px 0px 40px 0px;
+  display: flex;
+  justify-content: center; 
+  div ul li a {
+  	text-decoration: none;
+    font-family: $pacifico;
+    font-weight: bold;
+    font-size: 200%;
+    color: $strongBrown;
+    margin: 25px;
+  }
+  .navbar .nav-link:hover {
+    color: $grey; 
+    }
+  .navbar #logo {
+    padding: 2%;
+     margin: 15px;
+    position: relative;
+    bottom: -20px;
+    }
+}
+
+//index
+.ContIndex{
+	padding:40px 20px;
+	background-image: url(../media/paper_04.jpg);
+	.ContIndex-Text{
+    background-image: url(../media/paper_03.jpg);
+		font-family: $roboto;
+    font-size: 150%;
+    padding:2%;
+    margin:0% 5%;
+    width: 60%;
+    border-radius:9%;
+		}
+  .pContIndex-Text  {
+    background-image: url(../media/paper_03.jpg);
+    border-radius:5%;
+    padding:5%;
+    margin:0% 10%;
+    font-family: $mali;
+    font-weight: bold;
+    font-size: 120%;
+    margin: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+	.ContIndex-Collage {
+		padding: 30px 0px;
+    display: flex;
+   	flex-wrap: wrap;
+   	justify-content: center; 
+  }
+	.ContIndex-Coll-Pic {
+	  height: 300px;
+    background-image: url(../media/paper_01.jpg);
+    padding: 10px;
+    margin: 37px;
+    opacity: 1;
+  	-webkit-transition: .3s ease-in-out;
+  	transition: .3s ease-in-out;
+  	}
+	.ContIndex-Coll-Pic:hover {
+   		opacity: .6;
+		}
+}
+
+//Encuadernados
+.ContEncuad-Collage {
+  margin: 40px 0px 0px 0px; 
+  padding: 40px 0px;
+  background-image: url(../media/paper_02.jpg);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;  
+}  
+  .ContEncuad-Collage .ContEncuad-Img {
+    height: 300px;
+    background-image: url(../media/paper_03.jpg);
+    padding: 10px;
+    margin: 32px;
+    opacity: 1;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    }
+  div .ContEncuad-Collage :hover img {
+    opacity: .6;
+  }
+
+//SobreMi
+#SMCont1 {
+  background-image: url(../media/paper_03.jpg);
+  margin: 40px 0px 0px 0px;  
+  }
+  #SMCont1 h2 {
+    font-family: $mali;
+    font-weight: bold;
+    padding: 20px;
+    color: $grey; 
+    }
+  #SMCont1 p {
+    background-image: url(../media/paper_01.jpg);
+    border-radius: 5%;
+    font-family: $mali;
+    color: $grey;
+    font-size: 120%; 
+    }
+  #SMCont1 img {
+    padding: 10px 10px;
+    border-radius: 10%; 
+    }
+ #SMCont3 img {
+    padding: 20px 20px;
+    border-radius: 10%; 
+    }
+  #SMCont4 .firma {
+    height: 150px; 
+    }    
+  
+//Imprimibles
+.ContImp-Collage {
+  margin: 40px 0px 0px 0px; 
+  padding: 40px 0px;
+  background-image: url(../media/paper_02.jpg);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+}  
+  .ContImp-Collage .ContImp-Img {
+    height: 300px;
+    background-image: url(../media/paper_03.jpg);
+    padding: 10px;
+    margin: 32px;
+     opacity: 1;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    }
+  div .ContImp-Collage :hover img {
+    opacity: .6;
+    }
+
+//Contacto
+#Contacto{
+  background-image: url(../media/paper_01.jpg);
+  margin: 50px 0px 50px 0px;
+  a img  {
+    margin: 5% ;
+    }
+  .Texto2 {
+    font-family: $mali;
+    padding:10px 20px;
+    margin:10px 20px;
+    }
+}
+
+//Footer
+footer {
+  padding:30px 0px;
+  display:flex;
+  justify-content:center;
+  .footer1{
+    font-family: $mali;
+      text-align:center;
+  }
+  .footer{ 
+    bottom:0;
+    left:0;
+    position:fixed;
+      width: 100%;
+      height: 2em;
+      overflow:hidden;
+      margin:0 auto;
+    -webkit-transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+      transition: all 1s ease;
+    z-index:999;
+    #button{
+      width:10px;
+      height:10px;
+      border: $strongBrown 7px solid;
+      border-radius:10px;
+      margin:0 auto;
+      position:relative;
+      -webkit-transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+      transition: all 1s ease;
+      }
+      #button:hover{
+        width:20px;
+        height:20px;
+        border: $strongBrown 7px solid;
+        -webkit-transition: all 1s ease;
+          -moz-transition: all 1s ease;
+          -o-transition: all 1s ease;
+          -ms-transition: all 1s ease;
+          transition: all 1s ease;
+        position:relative;
+      }
+  }
+}
+  .footer:hover {
+    -webkit-transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+      transition: all 1s ease;
+    height: 10em;
+  }
+  .footer #container{
+    margin-top:5px;
+    width:100%;
+    height:100%;
+      position:relative;
+    top:0;
+      left:0;
+    background-image: url(../media/fondo.jpg);
+    #cont{
+      position:relative;
+        top:-45px;
+        right:190px;
+      width:150px;
+      height:auto;
+      margin:0 auto;
+      }
+  }
+  .footer_center{
+    width:500px;
+    float:left;
+      text-align:center;
+  }
+   footer .footer h4 {
+    color:$myRojo;
+    font-family: $mali;
+    //font-size: 30px;
+    font-weight: 100;
+    margin-top: 70px;
+    margin-left: 40px; 
+    }
+  footer .footer h4 .Footer-Paper-Text2 {
+    text-decoration: none;
+    color: $RojoStrong; 
+    }
